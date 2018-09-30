@@ -1,4 +1,10 @@
-<?php get_header();?>
+<?php
+/**
+ * Template Name: Launcher Home Page
+ */
+
+get_header();
+?>
 	<body <?php body_class(); ?>>
 	<div class="fh5co-loader"></div>
 
