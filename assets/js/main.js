@@ -89,8 +89,8 @@
 
 		// @ts-ignore
 		simplyCountdown('.simply-countdown-one', {
-			year: "2018",
-			month: "12",
+			year: "2019",
+			month: "1",
 			day: "31"
 		});
 
