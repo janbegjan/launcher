@@ -4,12 +4,15 @@
 * launcher theme cache busting
 */
 
+
+
 if(site_url() == 'http://local.wordpress.test/'){
-  define('VERSION', time());
-}else{
   define('VERSION', wp_get_theme()->get('Version'));
+  
+}else{
+  define('VERSION', time());
 }
-echo VERSION;
+
 /**
 * launcher theme bootstrap
 */
