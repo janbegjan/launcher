@@ -43,3 +43,29 @@ function launcher_assets(){
 
 }
 add_action('wp_enqueue_scripts', 'launcher_assets');
+
+/**
+* Add Footer sidebar register.
+*/
+function launcher_register_sidebar() {
+  register_sidebar( array(
+  'name'          => __( 'Footer left Sidebar', 'launcher' ),
+  'id'            => 'sidebar_footer_left',
+  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'launcher' ),
+  'before_widget' => '<section id="%1s" class="widget %2s">',
+  'after_widget'  => '</section>',
+  'before_title'  => '<h2 class="widget-title">',
+  'after_title'   => '</h2>',
+  ));
+  register_sidebar( array(
+  'name'          => __( 'Footer right Sidebar', 'launcher' ),
+  'id'            => 'sidebar_footer_right',
+  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'launcher' ),
+  'before_widget' => '<section id="%1s" class=" text-right widget %2s">',
+  'after_widget'  => '</section>',
+  'before_title'  => '<h2 class="widget-title">',
+  'after_title'   => '</h2>',
+  ));
+}
+add_action( 'widgets_init', 'launcher_register_sidebar' );
+
