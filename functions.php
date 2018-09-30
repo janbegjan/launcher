@@ -29,11 +29,11 @@ add_action('after_setup_theme', 'launcher_bootstrapping');
 * launcher theme assets
 */
 function launcher_assets(){
-  wp_enqueue_style('launcher_stylesheet-css', get_stylesheet_uri(), null, VERSION);
   wp_enqueue_style('animate-css', get_theme_file_uri('/assets/css/animate.css'));
   wp_enqueue_style('bootstrap-css', get_theme_file_uri('/assets/css/bootstrap.css'));
   wp_enqueue_style('icomoon-css', get_theme_file_uri('/assets/css/icomoon.css'));
   wp_enqueue_style('style-css', get_theme_file_uri('/assets/css/style.css'));
+  wp_enqueue_style('launcher_stylesheet-css', get_stylesheet_uri(), null, VERSION);
   
   wp_enqueue_script('jquery-easing-js', get_theme_file_uri('/assets/js/jquery.easing.1.3.js'), array('jquery'), null, true);
   wp_enqueue_script('bootstrap-js', get_theme_file_uri('/assets/js/bootstrap.min.js'), array('jquery'), null, true);

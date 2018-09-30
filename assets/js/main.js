@@ -90,8 +90,8 @@
 		// @ts-ignore
 		simplyCountdown('.simply-countdown-one', {
 			year: "2018",
-			month: "05",
-			day: "30"
+			month: "12",
+			day: "31"
 		});
 
 	};
