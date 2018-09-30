@@ -4,13 +4,13 @@
  */
 
 get_header();
-
+the_post();
 ?>
 	<body <?php body_class(); ?>>
 	<div class="fh5co-loader"></div>
 
 	<aside id="fh5co-aside" role="sidebar" class="text-center" style="background-image: url(images/img_bg_1_gradient.jpg);">
-		<h1 id="fh5co-logo"><a href="<?php echo get_home_url(); ?>">Launcher</a></h1>
+		<h1 id="fh5co-logo"><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
 	</aside>
 
 	<div id="fh5co-main-content">
@@ -23,8 +23,8 @@ get_header();
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="fh5co-intro animate-box">
-									<h2>Launcher Launching Soon!</h2>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<h2><?php the_title(); ?></h2>
+									<?php the_content(); ?>
 								</div>
 							</div>
 							
