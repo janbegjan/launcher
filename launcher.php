@@ -9,7 +9,7 @@ the_post();
 	<body <?php body_class(); ?>>
 	<div class="fh5co-loader"></div>
 
-	<aside id="fh5co-aside" role="sidebar" class="text-center" style="background-image: url(images/img_bg_1_gradient.jpg);">
+	<aside id="fh5co-aside" role="sidebar" class="text-center home-sidebar">
 		<h1 id="fh5co-logo"><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
 	</aside>
 

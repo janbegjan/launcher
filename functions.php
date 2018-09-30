@@ -69,3 +69,17 @@ function launcher_register_sidebar() {
 }
 add_action( 'widgets_init', 'launcher_register_sidebar' );
 
+function launcher_coming_soon_image(){
+  if(is_page()){
+    $thumbnail_url = get_the_post_thumbnail_url( null, 'large' );
+?>
+<style>
+  .home-sidebar{
+    background-image:url(<?php echo $thumbnail_url?>);
+  }
+</style>
+<?php
+  }
+}
+add_action('wp_head', 'launcher_coming_soon_image', 11);
+
