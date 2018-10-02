@@ -8,7 +8,6 @@
 <html lang='<?php language_attributes(); ?>'>
 	<head>
 	<meta charset="<?php bloginfo('charset'); ?>">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 	
   <?php wp_head(); ?>
   <!-- FOR IE9 below -->
