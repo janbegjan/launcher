@@ -41,6 +41,17 @@ function launcher_assets(){
   wp_enqueue_script('simplyCountdown-js', get_theme_file_uri('/assets/js/simplyCountdown.js'), array('jquery'), null, true);
   wp_enqueue_script('main-js', get_theme_file_uri('/assets/js/main.js'), array('jquery'), VERSION, true);
 
+
+  //countDown PHP -> JS data.
+  $countdown_data = array(
+    'year' => get_post_meta(get_the_ID(), 'year', true),
+    'month' => get_post_meta(get_the_ID(), 'month', true),
+    'day' => get_post_meta(get_the_ID(), 'day', true)
+  );
+
+  wp_localize_script( 'main-js', 'countdown_data', $countdown_data);
+
+
 }
 add_action('wp_enqueue_scripts', 'launcher_assets');
 

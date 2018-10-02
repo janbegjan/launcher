@@ -86,12 +86,10 @@
 	};
 
 	var countDown = function() {
-
-		// @ts-ignore
 		simplyCountdown('.simply-countdown-one', {
-			year: "2019",
-			month: "1",
-			day: "31"
+			year: countdown_data.year,
+			month: countdown_data.month,
+			day: countdown_data.day
 		});
 
 	};
