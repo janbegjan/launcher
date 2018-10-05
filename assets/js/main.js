@@ -1,3 +1,4 @@
+// @ts-nocheck
 ;(function ($) {
 	
 	'use strict';
@@ -86,6 +87,7 @@
 	};
 
 	var countDown = function() {
+
 		simplyCountdown('.simply-countdown-one', {
 			year: countdown_data.year,
 			month: countdown_data.month,
