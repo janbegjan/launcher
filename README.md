@@ -2,6 +2,8 @@
 TITLE: 
 Launcher - 100% Fully Responsive Free HTML5 Bootstrap Template
 
+DEMO: https://freehtml5.co/preview/?item=launcher-simple-coming-soon-html5-bootstrap-template
+
 AUTHOR:
 DESIGNED & DEVELOPED by FreeHTML5.co
 
