@@ -1,6 +1,6 @@
 
 TITLE: 
-Launcher - 100% Fully Responsive Free HTML5 Bootstrap Template
+Launcher - 100% Fully Responsive Free HTML5 Bootstrap Template (HTML to WordPress)
 
 DEMO: https://freehtml5.co/preview/?item=launcher-simple-coming-soon-html5-bootstrap-template
 
